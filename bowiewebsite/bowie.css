@@ -1,0 +1,16 @@
+body{
+    background-color:#fbc3c3;
+    color:#ff03bc;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    
+    line-height: 1.6em;
+}
+
+image{
+    width:80%;
+    margin:auto;
+}
+
