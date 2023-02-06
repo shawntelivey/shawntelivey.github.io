@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+
+    <style>
+        .button {
+            padding:16px;
+            border:1px solid blueviolet;
+            display:inline-block;
+        }
+        
+        .content{  
+            font-size: 40px;
+            display:block;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .start-animate {
+            animation-name:boop;
+            animation-duration: 2s;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <p class="button">I'm a Button</p>
+    <p class="content hide">I'm some content</p>
+
+    <a class=".kitty-swap" href="#">swap image</a>
+    <img src="https://placekitten.com/200/200"/>
+
+    <script   src="https://code.jquery.com/jquery-3.6.3.min.js"   integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="   crossorigin="anonymous"></script>
+
+    <script>
+        $(".kitty-swap").hover(function(){
+            $(".kitty-swap").attr("src","https://placekitten.com/200/200");
+                $(".content").toggleClass("hide");
+        })
+
+        $(".button").hover(function(){
+            $(".button").attr();
+                $(".content").toggleClass("hide");
+        })
+    </script>
+</body>
+</html>

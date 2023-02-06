@@ -1,0 +1,14 @@
+svg {
+    overflow: visible;
+    transition: all 0.5s ease;
+}
+#w:hover;
+#i:hover;
+#n:hover;
+#t:hover;
+#e:hover;
+#r:hover;
+
+{
+    transform: rotate(15deg);
+}

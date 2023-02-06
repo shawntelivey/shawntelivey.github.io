@@ -1,16 +1,22 @@
+body h1{
+    color:#ea3d3d;
+    position: absolute;
+    font-family: fantasy;
+    font-size: 200px;
+    font-weight: bold;
+}
+
 body{
-    background-color:#fbc3c3;
-    color:#ff03bc;
+    background-image: url('images/bowie.gif');
+    background-size: cover;
+    min-height: 100vh;
+}
+.background{
+    background-position: 0%;
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    
-    line-height: 1.6em;
 }
 
-image{
-    width:80%;
-    margin:auto;
+.home-link div{
+    width:100vw;
+    height:100vh;
 }
-
