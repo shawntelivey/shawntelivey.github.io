@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food!</title>
+
+    <style>
+        #menu-box {
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            text-align: center;
+          transition:1s;
+          opacity:1;
+          margin-top:-6px;
+        }
+
+        #menu-box.hide {
+          opacity:0;
+          height: 0;
+          padding:0;
+        }
+
+        .menuSlide {
+            width: 100%;
+        }
+       
+    </style>
+
+    <link rel="stylesheet" type="text/css"
+    href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home!</a></li>
+            <li><a href="food.html">Food!</a></li>
+            <li><a href="drink.html">Drink!</a></li>
+            <li><a href="fun.html">Fun!</a></li>
+            <li><a href="merch.html">Merch!</a></li>
+        </ul>
+    </nav>
+    
+    <h1 class="logo"><img src="images/tr_logo2.png" alt="Logo"></h1>
+
+    <a href="#" id="menuSlide"><img src="images/foodmenu.png"></a>
+
+    <div id="menu-box" class="hide">
+ 	    <img src="images/foodmenu2.png"></p>
+ 	</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+ 
+    <script>
+        $(document).ready(function(){
+        $('#menuSlide').click(function(){
+        $('#menu-box').toggleClass('hide')
+ 		});
+        });
+    </script>
+
+    <div class="text">
+        <img src="images/foodtext.png" alt="Food">
+    </div>
+    
+
+    <div class="container">
+        <div class="images">
+            <img src="images/food1.png" alt="Food">
+            <img src="images/food2.png" alt="Food">
+        </div>
+        
+        <div class="images">
+            <img src="images/food1.png" alt="Food">
+            <img src="images/food2.png" alt="Food">
+        </div>
+
+        <div class="images">
+            <img src="images/food3.png" alt="Food">
+            <img src="images/food4.png" alt="Food">
+        </div>
+    </div>
+
+    <div class="background">
+        <img src="images/food_background.png" alt="Food"> 
+    </div>
+</body>
+</html>
