@@ -1,26 +1,96 @@
 body {
-    background-color: white;
-    color: black;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#FED705 33.33%, #F786AA 33.33%, #F786AA 66.66%, #329FA1 66.66%);
+    background-color:#329FA1; 
+    background-size: 100% 100% 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 0px;
+
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     text-align: left;
     
     line-height: 1.6em;
 }
 
+
+
 img {
-    width: 50%;
+    max-width: 100%;
+    height: auto;
 }
 
-
-h1.logo {
-    margin: auto;
-    width: 50%;
-    padding: 30px;
+.logo {
+    max-width: 100%;
+    height: auto;
+    flex: 1;
+    padding: 10px 10px;
     text-align: center;
 }
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+
+h1 {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+h2 {
+    color: white;
+    flex: 1;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    flex: 1;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h4 {
+    flex: 1;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+p{
+    flex: 1;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left; 
+}
+
+
+
+.button {
+    text-align: center;
+}
+
+
 
 .text {
     margin: auto;
@@ -39,22 +109,26 @@ h1.logo {
 
 .images {
     flex: 1;
-    color: white;
+   
     padding: 20px;
+    text-align: center;
+}
+
+.grubhub-logo {
     text-align: center;
 }
 
 .food, .drink, .fun, .merch {
     flex: 1;
-    color: white;
+    
     padding: 10px;
     text-align: center;
 }
     
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     overflow: hidden;
     display: flex;
 }
@@ -67,24 +141,26 @@ li a {
     display: block;
     color: black;
     text-align: right;
-    padding: 20px 20px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
 li a:hover {
-    color: teal
+    color: #329FA1;
 }
 
+
 #menu-box {
- 	background: rgb(76, 32, 32);
+ 	background: #329FA1;
  	color: rgb(0, 0, 0);
+    font-size: 20px;
  	width: 500px;
  	height: 100%;
- 	padding: 40px;
+ 	padding: 50px;
  	text-align: center;
-   transition:1s;
-   opacity:1;
-   margin-top:-6px;
+    transition:1s;
+    opacity:1;
+    margin-top:-205px;
 }
 
 #menu-box.hide {
@@ -93,3 +169,13 @@ li a:hover {
    padding:0;
 }
 
+
+
+.social-media {
+    background-color: #329FA1;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
