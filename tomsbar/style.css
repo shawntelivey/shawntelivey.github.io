@@ -145,16 +145,15 @@ p{
     padding: 5px;
     font-size: 16px;
     font-weight: normal;
-    text-align: left; 
+    text-align: center; 
 }
 
 
 
 .button {
     text-align: center;
+    
 }
-
-
 
 .text {
     margin: auto;
@@ -221,13 +220,14 @@ li a:hover {
  	background: #329FA1;
  	color: rgb(0, 0, 0);
     font-size: 20px;
- 	width: 500px;
- 	height: 100%;
- 	padding: 50px;
+ 	padding: none;
  	text-align: center;
     transition:1s;
     opacity:1;
-    margin-top:-205px;
+    margin-top:10px;
+    position: relative;
+    
+    
 }
 
 #menu-box.hide {
@@ -235,8 +235,6 @@ li a:hover {
    height: 0;
    padding:0;
 }
-
-
 
 .social-media {
     background-color: #329FA1;
